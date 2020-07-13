@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='portfoliobutton' href='portfolio.html'>
+    <link rel='contactbutton' href='contact.htlm'>
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Container for flexboxes */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        /* Create four equal columns */
+        .col {
+          flex: 25%;
+          padding: 20px;
+        }
+        
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        @media screen and (max-width: 992px) {
+          .column {
+            flex: 50%;
+          }
+        }
+        
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .row {
+            flex-direction: column;
+          }
+        }
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color:gray;
+          color: white;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="name">Maria Cruz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mt-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card">
+        <div class="card-body">
+            <div class= "container">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                </div>
+
+                <hr/>
+                <br>
+                
+                <div class="row" id="view">
+                    <div class="col-6">
+                        <img id="img2" src="https://lh3.googleusercontent.com/EWYH_sj6WufP4EHCDtLDiNxAKbBBBMCk3PR8f8w1l0S7PbHbC7HAGwA2agLEVBp5-2d-u6AQgI8=w640-h400-e365"  alt="word games"> 
+                        <div class="text-block">
+                            <p>Word Puzzle</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img id="img2" src="https://images-na.ssl-images-amazon.com/images/I/611Zcpu4MsL.png" alt="tictactoegame" > 
+                        <div class="text-block">
+                            <p>Tic Tac Toe</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img id="img2" src="https://i0.wp.com/ilbrainhealth.org/wp-content/uploads/2018/04/trivia-papper-background-illustration-vector.jpg?resize=404%2C283&ssl=1" alt="trivia" > 
+                        <div class="text-block">
+                            <p>Trivia</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img id="img2" src="https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg" alt="weather" > 
+                        <div class="text-block">
+                            <p>Weather App</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img id="img2" src="https://i.ytimg.com/vi/WR_pWXJZiRY/maxresdefault.jpg" alt="RPS" > 
+                        <div class="text-block">
+                            <p>Rock Paper Scissors</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <p>Copyright2020</p>
+        </div>
+    </footer>
+        
+    
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+</body>
+</html>
