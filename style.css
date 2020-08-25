@@ -3,16 +3,17 @@ ul {
   float: left;
 }
 
-#name {
+/* #name {
   background: black;
   color: white;
   padding: 20px 40px;
   font-weight: bold;
-}
+} */
+
 /* about me img */
 img {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
 }
 
 .box {
