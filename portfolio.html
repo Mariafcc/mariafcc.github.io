@@ -1,113 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="portfoliobutton" href="portfolio.html" />
-    <link rel="contactbutton" href="contact.htlm" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="name"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto mt-2">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="card">
+    <div class="card-body">
+      <div class="container">
+        <div class="row">
+          <h2>Portfolio</h2>
+        </div>
 
-      /* Container for flexboxes */
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-      }
+        <hr />
+        <br />
 
-      /* Create four equal columns */
-      .col {
-        flex: 25%;
-        padding: 20px;
-      }
-
-      /* On screens that are 992px wide or less, go from four columns to two columns */
-      @media screen and (max-width: 992px) {
-        .column {
-          flex: 50%;
-        }
-      }
-
-      /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .row {
-          flex-direction: column;
-        }
-      }
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: gray;
-        color: white;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" id="name"></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto mt-2">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="card">
-      <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <h2>Portfolio</h2>
+        <div class="row" id="view">
+          <div class="col-6">
+            <img id="img2" src="../mariafcc.github.io/img/codequiz.png" alt="code quiz" />
+            <div class="text-block">
+              <p class="codeQuiz">
+                <a href="https://github.com/Mariafcc/sprint4homework">Quiz</a>
+              </p>
+            </div>
           </div>
 
-          <hr />
-          <br />
-
-          <div class="row" id="view">
-            <div class="col-6">
-              <img
-                id="img2"
-                src="../mariafcc.github.io/img/codequiz.png"
-                alt="code quiz"
-              />
-              <div class="text-block">
-                <p class="codeQuiz">
-                  <a href="https://github.com/Mariafcc/sprint4homework">Quiz</a>
-                </p>
-              </div>
-            </div>
-
-            <!-- <div class="col-6">
+          <!-- <div class="col-6">
               <img
                 id="img2"
                 src="https://images-na.ssl-images-amazon.com/images/I/611Zcpu4MsL.png"
@@ -118,67 +50,203 @@
               </div>
             </div>-->
 
-            <div class="col-6">
-              <img id="img2" src="../img/burger.png" alt="burgerApp" />
-              <div class="text-block">
-                <a href="https://burger-mc.herokuapp.com/">Burger App</a>
-              </div>
+          <div class="col-6">
+            <img id="img2" src="../img/burger.png" alt="burgerApp" />
+            <div class="text-block">
+              <a href="https://burger-mc.herokuapp.com/">Burger App</a>
             </div>
+          </div>
 
-            <div class="col-6">
-              <img
-                id="img2"
-                src="../mariafcc.github.io/img/weatherapp.png"
-                alt="weather"
-              />
-              <div class="text-block">
-                <p class="weatherapp">
-                  <a href="https://github.com/Mariafcc/sprint6homework"
-                    >Weather</a
-                  >
-                </p>
-              </div>
+          <div class="col-6">
+            <img id="img2" src="../mariafcc.github.io/img/weatherapp.png" alt="weather" />
+            <div class="text-block">
+              <p class="weatherapp">
+                <a href="https://github.com/Mariafcc/sprint6homework">Weather</a>
+              </p>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <img id="img2" src="../img/todolist.png" alt="tolist" />
-                <div class="text-block">
-                  <p class="ToDolist">
-                    <a href="https://github.com/Mariafcc/sprint5homework"
-                      >To-Do List</a
-                    >
-                  </p>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img id="img2" src="../img/todolist.png" alt="tolist" />
+              <div class="text-block">
+                <p class="ToDolist">
+                  <a href="https://github.com/Mariafcc/sprint5homework">To-Do List</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer">
-        <p>Copyright2020</p>
+
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="portfoliobutton" href="portfolio.html" />
+  <link rel="contactbutton" href="contact.htlm" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Container for flexboxes */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Create four equal columns */
+    .col {
+      flex: 25%;
+      padding: 20px;
+    }
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        flex: 50%;
+      }
+    }
+
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: gray;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </footer>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+          <li><a href="index.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>My Portfolio</h1>
+      <p>Some text that represents "Me"...</p>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>Some of my Work</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div><br><br>
+
+  <footer class="container-fluid text-center">
+    <div>
+      <p>Copyright2020</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
